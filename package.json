@@ -1,0 +1,34 @@
+{
+  "name": "pagina-de-login-e-cadastro",
+  "version": "1.0.0",
+  "description": "O objetivo deste projeto é colocar em prática meu aprendizado recente de POO, e revisitar o que eu já havia aprendido de git, NPM, ESModules e CommonJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel src --out-dir dist",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHammes/Pagina-de-login-e-cadastro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHammes/Pagina-de-login-e-cadastro/issues"
+  },
+  "homepage": "https://github.com/PedroHammes/Pagina-de-login-e-cadastro#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
