@@ -9,34 +9,47 @@
 <body>
 
   <header>
-    <h1>teste</h1>
+    <h1>Crie seu currículo</h1>
   </header>
-  <section>
-      <label for="fname">Nome: </label>
-      <input type="text" id="fname">
+  <br>
+  <form>
+    <section class="user-information">
+      <div class="labels">
+        <label for="fname">Nome:</label><br>
+        <label for="lname">Sobrenome:</label><br>
+        <label for="age">Idade:</label><br>
+        <label for="email">Email:</label><br>
+        <label for="phone">Celular:</label><br>
+        <label for="city">Cidade:</label><br>
+        <label for="country">Estado:</label><br>
+      </div>
+      
+      <div class="ids">
+        <input type="text" id="fname"><br>
+        <input type="text" id="lname"><br>
+        <input type="number" id="age"><br>
+        <input type="email" id="email"><br>
+        <input type="tel" id="phone"><br>
+        <input type="text" id="city"><br>
+        <input type="text" id="country"><br>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section>
+      <h3>Habilidades</h3>
+      <div id="skills">
+        <label for="html"> <input type="checkbox" name="skill" value="html" id="html"> html </label>
+        <label for="css"> <input type="checkbox" name="skill" value="html" id="css"> css </label>
+        <label for="javascript"> <input type="checkbox" name="skill" value="html" id="javascript"> javascript </label>
+        <label for="sass"> <input type="checkbox" name="skill" value="html" id="sass"> sass </label>
+        <label for="git"> <input type="checkbox" name="skill" value="html" id="git"> git </label>
+        <label for="react"> <input type="checkbox" name="skill" value="html" id="react"> react </label>
+      </div>
+    </section>
 
-      <label for="lname">Sobrenome: </label>
-      <input type="text" id="lname">
-
-      <label for="age">Idade: </label>
-      <input type="number" id="age">
-
-      <label for="email">Email: </label>
-      <input type="email" id="email">
-
-      <label for="phone">Celular: </label>
-      <input type="tel" id="phone">
-
-      <section>
-        <label for="skills">Habilidades: </label>
-        html<input type="checkbox" name="skill" value="html">
-        css<input type="checkbox" name="skill" value="css">
-        javascript<input type="checkbox" name="skill" value="javascript">
-        sass<input type="checkbox" name="skill" value="sass">
-        git<input type="checkbox" name="skill" value="git">
-        react<input type="checkbox" name="skill" value="react">
-
-      </section>
-  </section>
+    <button>Gerar currículo</button>
+  </form>
+  <footer>Coded by <a href="https://github.com/PedroHammes"> Pedro Hammes</a> </footer>
 </body>
 </html>
