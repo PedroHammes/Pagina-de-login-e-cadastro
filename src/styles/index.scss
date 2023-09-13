@@ -4,57 +4,71 @@
   padding: 0;
 }
 
-$light-backgound: #cccccc;
-$light-font: #161e30;
+$light-backgound: #00a06a;
+$light-font: #22252a;
 
-$dark-background: #161e30;
-$dark-font: #cccccc; 
+$dark-background: #22252a;
+$lessDark-background: #515b69;
+$dark-font: #ffffff;
 
 $links: #6c8fc4;
 
 body{
   padding: 8px;
-  background-color: $dark-background;
-  color: $dark-font;
+  background-color: $light-backgound;
+  color: $light-font;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 100vh;
 }
 
 form{
-  background-color: $light-backgound;
-  color: $light-font;
+  background-color: $dark-background;
+  color: $dark-font;
   border-radius: 16px;
-  padding: 8px;
+  padding: 32px;
+  width: 300px;
 
   display: flex;
   flex-direction: column;
 }
-.user-information{
+
+div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 8px;
 }
 
-#skills{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+label{
+  color: $lessDark-background;
 }
 
 input{
   border: none;
   border-radius: 8px;
+  background-color: $lessDark-background;
+  width: 200px;
+  height: 30px;
 }
 
-button{
-  background-color: $dark-background;
+.main-button{
+  background-color: $light-backgound;
   color: $dark-font;
   width: 200px;
   height: 30px;
   border: none;
   border-radius: 8px;
 }
+
+.secondary-button{
+  background-color: $dark-background;
+  color: $lessDark-background;
+  border: none;
+  border-bottom: solid 2px $lessDark-background;
+}
+
 
 footer{
   display: flex;

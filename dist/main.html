@@ -4,51 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="./main.min.js"></script>
+  <script src="./main.min.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>Crie seu currículo</h1>
-  </header>
-  <br>
-  <form>
-    <section class="user-information">
-      <div class="labels">
-        <label for="fname">Nome:</label><br>
-        <label for="lname">Sobrenome:</label><br>
-        <label for="age">Idade:</label><br>
-        <label for="email">Email:</label><br>
-        <label for="phone">Celular:</label><br>
-        <label for="city">Cidade:</label><br>
-        <label for="country">Estado:</label><br>
-      </div>
-      
-      <div class="ids">
-        <input type="text" id="fname"><br>
-        <input type="text" id="lname"><br>
-        <input type="number" id="age"><br>
-        <input type="email" id="email"><br>
-        <input type="tel" id="phone"><br>
-        <input type="text" id="city"><br>
-        <input type="text" id="country"><br>
-      </div>
-    </section>
-    <br>
-    <br>
-    <section>
-      <h3>Habilidades</h3>
-      <div id="skills">
-        <label for="html"> <input type="checkbox" name="skill" value="html" id="html"> html </label>
-        <label for="css"> <input type="checkbox" name="skill" value="html" id="css"> css </label>
-        <label for="javascript"> <input type="checkbox" name="skill" value="html" id="javascript"> javascript </label>
-        <label for="sass"> <input type="checkbox" name="skill" value="html" id="sass"> sass </label>
-        <label for="git"> <input type="checkbox" name="skill" value="html" id="git"> git </label>
-        <label for="react"> <input type="checkbox" name="skill" value="html" id="react"> react </label>
-      </div>
-    </section>
+  <header>Wellcome to</header>
 
-    <button>Gerar currículo</button>
+  <form>
+    <div id="login">
+      <button class="secondary-button" id="btn-login">Login</button>
+      <label for="email">Email</label>
+      <input type="email" id="email">
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" required>
+
+      <button class="main-button">Entrar</button>
+    </div>
+
+    <div id="signup">
+      <button class="secondary-button">Sign Up</button>
+      <button class="main-button">Entrar</button>
+    </div>
   </form>
   <footer>Coded by <a href="https://github.com/PedroHammes"> Pedro Hammes</a> </footer>
 </body>
