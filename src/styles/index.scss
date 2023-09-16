@@ -33,12 +33,13 @@ form{
 
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
-div{
+.signin-or-login{
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 label{
@@ -67,6 +68,7 @@ input{
   color: $lessDark-background;
   border: none;
   border-bottom: solid 2px $lessDark-background;
+  width: 116px;
 }
 
 
