@@ -8,19 +8,23 @@
 </head>
 <body>
 
-  <header>Wellcome to</header>
+  <header>Wellcome to anything</header>
 
   <form>
       <div id="signin-or-login">
-        <button class="secondary-button">Sign Up</button>
-        <button class="secondary-button">Login</button>
+        <button class="secondary-button form-selected" id="sign-up-form">Sign Up</button>
+        <button class="secondary-button" id="login-form">Login</button>
       </div>
-      <label for="name">Nome <br> <input type="text" id="name"> </label>
-      <label for="email">Email <br> <input type="email" id="email"> </label>
-      <label for="password">Senha <br> <input type="password" id="password" required> </label>
-      <label for="rewrite-password">Reescreva a senha <br> <input type="password" id="rewrite-password" required> </label>
-      <button class="main-button" id="btn-sign-in">Entrar</button>
+      <label for="name" class="secondary-fields" id="label-name">NAME <br> <input type="text" class="secondary-fields" id="name" required> </label>
+      <label for="email">EMAIL <br> <input type="email" id="email" required> </label>
+      <label for="password">PASSWORD <br> <input type="password" id="password" required> </label>
+      <label for="rewrite-password" class="secondary-fields" id="label-rewrite-password">RETYPE PASSWORD <br> <input type="password" class="secondary-fields" id="rewrite-password" required> </label>
+      <button class="main-button" id="register-btn">Register</button>
+      <button class="main-button" id="login-btn">Login</button>
   </form>
-  <footer>Coded by <a href="https://github.com/PedroHammes">Pedro Hammes</a> </footer>
+  <footer>
+    <p>Coded by <a href="https://github.com/PedroHammes">Pedro Hammes</a> </p> <br>
+    <p>You can see the complete repo on my github: <a href="https://github.com/PedroHammes/Pagina-de-login-e-cadastro" target="_blank">Pagina-de-login-e-cadastro</a></p>
+  </footer>
 </body>
 </html>
