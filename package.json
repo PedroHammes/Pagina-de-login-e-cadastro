@@ -1,0 +1,23 @@
+{
+  "name": "crud-de-usuarios",
+  "version": "1.0.0",
+  "description": ">Criar e cadastrar usuários na base de dados.  \r Login de usuários cadastrados na base de dados.  \r Atualizar dados de usuários cadastrados.  \r Excluir dados de usuários cadastrados.",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch src/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHammes/CRUD-de-usuarios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHammes/CRUD-de-usuarios/issues"
+  },
+  "homepage": "https://github.com/PedroHammes/CRUD-de-usuarios#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

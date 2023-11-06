@@ -1,0 +1,13 @@
+{
+ "users": [
+  {
+    "id": 1,
+    "fullName": "João Pedro Hammes Pacheco",
+    "birth": "09-03-2001",
+    "email": "hammespedro4@gmail.com",
+    "telephone": "(21)96747-1164",
+    "username": "@pedroHammes",
+    "password": "21Pilots!"
+  }
+ ] 
+}
