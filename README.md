@@ -1,4 +1,4 @@
-# Controle de Usuários
+# My Friendo!
 
 >Criar e cadastrar usuários na base de dados.  
 Login de usuários cadastrados na base de dados.  
