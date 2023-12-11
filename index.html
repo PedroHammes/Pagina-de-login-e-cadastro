@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MyFriendo!</title>
 </head>
 <body>
-  <h1>Cadastro</h1>
+  <h1>MyFriendo!</h1>
+  <main>
+    <form action="http://localhost:3000/users" method="post">
+      <input type="text" name="name" id="name" placeholder="Name">
+      <label for="birth">Nascimento: <input type="date" name="birth" id="birth"> </label>
+      <input type="email" name="email" id="email" placeholder="Email">
+      <input type="text" name="username" id="username" placeholder="Username">
+      <input type="text" name="password" id="password" placeholder="Password">
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+
+  <section id="users">
+
+  </section>
+
+  <script src="src/get.js"></script>
 </body>
 </html>
