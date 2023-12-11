@@ -1,12 +1,20 @@
 {
- "users": [
-  {
-    "id": 1,
-    "name": "Pedro Hammes",
-    "birth": "09-03-2001",
-    "email": "hammespedro4@gmail.com",
-    "username": "@pedroHammes",
-    "password": "21Pilots!"
-  }
- ] 
+  "users": [
+    {
+      "id": 1,
+      "name": "Pedro Hammes",
+      "birth": "2001-03-09",
+      "email": "hammespedro4@gmail.com",
+      "username": "@pedroHammes",
+      "password": "21Pilots!"
+    },
+    {
+      "name": "Maria Gomes",
+      "birth": "2001-12-07",
+      "email": "mariagomes@gmail.com",
+      "username": "@mariagomes",
+      "password": "123",
+      "id": 2
+    }
+  ]
 }
