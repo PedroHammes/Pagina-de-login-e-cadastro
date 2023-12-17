@@ -12,7 +12,8 @@ loginBtn.addEventListener('click', (ev) => {
     }
 
     console.log(`${userTryingToLogin.username} está tentando entrar.`)
-    validateLogin(userList, userTryingToLogin)
+    validateLogin(userTryingToLogin)
+
 
 })
 
@@ -25,17 +26,27 @@ async function getUsers() {
     console.log(userList)
 }
 
-function validateLogin(userList, userTryingToLogin){
-    if(!userList.find(user => user.username === userTryingToLogin.username)){
+function validateLogin(userTryingToLogin){
+    const userExist = userList.find(user => user.username === userTryingToLogin.username)
+    if(!userExist){
         console.log('Este username não está vinculado a nenhuma conta')
+    }else if(!(userTryingToLogin.email === userExist.email)){
+        console.log('Email inválido.')
+    }else if(!(userTryingToLogin.password === userExist.password)){
+        console.log('Senha incorreta')
     }else{
-        if(!userList.find(user => user.email === userTryingToLogin.email)){
-            console.log(`Username encontrado, mas este email não está vinculado a nenhuma conta`)
-        }else{
-            console.log(`Username e email encontrado, testando a senha`)
-        }
+        console.log(`Login efetuado:\n`+
+            `Username: ${userExist.username}\n`+
+            `Email: ${userExist.email}\n`+
+            `Password: ${userExist.password}\n`+
+            `Aniversário: ${userExist.birth}`)
     }
-    
+
+    loggedUser()
+}
+
+function loggedUser() {
+    window.location.href = 'home.html'
 }
 
 
