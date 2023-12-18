@@ -1,4 +1,5 @@
-let userList = []
+import { getUsers, userList } from "./get.js"
+
 const loginBtn = document.querySelector('#login-btn')
 
 loginBtn.addEventListener('click', (ev) => {
@@ -16,15 +17,6 @@ loginBtn.addEventListener('click', (ev) => {
 
 
 })
-
-async function getUsers() {
-    const response = await fetch('http://localhost:3000/users')
-    const users = await response.json()
-    users.forEach(user => {
-        userList.push(user)
-    });
-    console.log(userList)
-}
 
 function validateLogin(userTryingToLogin){
     const userExist = userList.find(user => user.username === userTryingToLogin.username)

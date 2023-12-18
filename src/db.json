@@ -15,6 +15,22 @@
       "username": "@mariagomes",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Admin",
+      "birth": "2023-12-18",
+      "email": "admin@email",
+      "username": "@admin",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "name": "ADM",
+      "birth": "2023-12-18",
+      "email": "adm@email",
+      "username": "@adm",
+      "password": "adm",
+      "id": 4
     }
   ]
 }
